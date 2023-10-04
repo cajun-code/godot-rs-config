@@ -2,7 +2,13 @@
 name = "godot-rs-config"
 version = "0.1.0"
 edition = "2021"
-
+license = "MIT"
+authors = ["Allan Davis<cajun.code@gmail.com>"]
+description = "Command line tool to generate Godot Extention config"
+homepage = "https://github.com/cajun-code/godot-rs-config"
+repository = "https://github.com/cajun-code/godot-rs-config"
+readme = "README.md"
+keywords = ["gamedev", "godot", "cli"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
