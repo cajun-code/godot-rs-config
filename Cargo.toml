@@ -1,6 +1,6 @@
 [package]
 name = "godot-rs-config"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 authors = ["Allan Davis<cajun.code@gmail.com>"]
@@ -11,4 +11,21 @@ readme = "README.md"
 keywords = ["gamedev", "godot", "cli"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name="godot-config"
+path="src/main.rs"
+
+[[test]]
+name = "cuke"
+harness = false
+
 [dependencies]
+anyhow = "1.0.75"
+cargo-generate = "0.18.4"
+clap = { version = "4.3.24", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "2.0.12"
+assert_fs = "1.0.13"
+cucumber = "0.20.0"
+futures = "0.3.28"
