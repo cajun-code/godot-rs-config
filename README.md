@@ -2,15 +2,19 @@
 
 A command line tool to create a godot extension library.
 
+## Install
+``` bash
+  $ cargo install godot-rs-config
+```
 
 ## Generate Project
-```
-    $ godot-config new <lib_name>
+``` bash
+  $ godot-config new <lib_name>
 ```
 
 
 ## Generate Godot class struct
-```
+``` bash
   $ godot-config class <className> <baseNode>
 
 ```
