@@ -5,13 +5,13 @@ A command line tool to create a godot extension library.
 
 ## Generate Project
 ```
-    $ godot-config new --godot-project --project-name --directory 
+    $ godot-config new <lib_name>
 ```
 
 
 ## Generate Godot class struct
 ```
-  $ godot-config class <className>:<baseNode> --directory
+  $ godot-config class <className> <baseNode>
 
 ```
 
