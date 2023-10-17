@@ -15,14 +15,18 @@ keywords = ["gamedev", "godot", "cli"]
 name="godot-config"
 path="src/main.rs"
 
-[[test]]
-name = "cuke"
-harness = false
+# [[test]]
+# name = "cuke"
+# harness = false
 
 [dependencies]
 anyhow = "1.0.75"
 cargo-generate = "0.18.4"
 clap = { version = "4.3.24", features = ["derive"] }
+convert_case = "0.6.0"
+reqwest = { version = "0.11.22", features = ["json"] }
+tera = "1.19.1"
+tokio = { version = "1.33.0", features = ["test-util", "macros", "rt-multi-thread"] }
 
 [dev-dependencies]
 assert_cmd = "2.0.12"
